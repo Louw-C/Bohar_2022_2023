@@ -22,10 +22,16 @@ Biometrics <- Biometrics %>%
 write.csv(Biometrics,"E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data.csv", row.names=FALSE)
 
 #Upload DEPLOYMENTS
-Deployments<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv")
+Deployments<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Bohar_test\\Deployments.csv")
 names(Deployments)
 #Sort out the format of the date and time
-Deployments<-Deployments %>% mutate(Start=mdy(Start))
+Deployments<-Deployments %>% mutate(Start=ymd_hm(Start))
+Deployments<- Deployments %>% 
+  mutate(Start = parse_date_time(Start, orders = "%Y-%m-%d %H:%M"))
+Deployments<-Deployments %>% mutate(Stop=ymd_hm(Stop))
+Deployments<- Deployments %>% 
+  mutate(Stop = parse_date(Stop, orders = "%Y-%m-%d %H:%M"))
+
 Deployments<-Deployments %>% mutate(Stop=mdy(Stop))
 #Save the formatted data frame
 write.csv(Deployments,"E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv", row.names=FALSE)
