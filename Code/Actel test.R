@@ -1,0 +1,7 @@
+library(actel)
+getwd()
+setwd("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Actel Example")
+exampleWorkspace("Actel Example")
+results<-explore(tz='Europe/Copenhagen', report=TRUE)
+plotDetections()
+plotMoves(results)
