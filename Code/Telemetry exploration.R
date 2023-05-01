@@ -5,14 +5,21 @@ setwd("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar taggi
 getwd()
 
 #Upload your BIOMETRICS (fish and their tags)
-Biometrics<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Biometrics.csv")
+Biometrics<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Bohar_test\\Biometrics.csv")
 names(Biometrics)
+Biometrics
+
 
 #sort out time and date (combine and make sure of format)
 #unite date and time in two separate columns into a new merged one - date.time
 Biometrics<-Biometrics %>% unite('Release.date.time', Release.date,Release.time, remove=FALSE)
 #Sort out the format of the date and time
-Biometrics<-Biometrics %>% mutate(Release.date.time=mdy_hm(Release.date.time))
+Biometrics<-Biometrics %>% mutate(Release.date.time=ymd_hm(Release.date.time))
+Biometrics <- Biometrics %>% 
+  mutate(Release.date1 = parse_date_time(Release.date, 
+                                          orders = "%Y-%m-%d %H:%M"))
+#Save the formatted data frame
+write.csv(Biometrics,"E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data.csv", row.names=FALSE)
 
 #Upload DEPLOYMENTS
 Deployments<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv")
@@ -20,7 +27,17 @@ names(Deployments)
 #Sort out the format of the date and time
 Deployments<-Deployments %>% mutate(Start=mdy(Start))
 Deployments<-Deployments %>% mutate(Stop=mdy(Stop))
+#Save the formatted data frame
+write.csv(Deployments,"E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv", row.names=FALSE)
+
 
 #Upload SPATIAL
 Spatial<-read.csv("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Spatial.csv")
 names(Spatial)
+
+#time zone to use - Pacific/Guam
+getwd()
+setwd("E:\\Palau/Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Bohar_test")
+createWorkspace("Bohar_test")
+
+explore(tz = "Pacific/Guam")
