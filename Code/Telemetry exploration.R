@@ -1,5 +1,8 @@
 require(tidyverse)
 require(actel)
+require(raster)
+require(gdistance)
+require(rgdal)
 
 #Set your working directory (remember to change \ to \\)
 setwd("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023")
@@ -35,7 +38,7 @@ Deployments<- Deployments %>%
 
 Deployments<-Deployments %>% mutate(Stop=mdy(Stop))
 #Save the formatted data frame
-write.csv(Deployments,"E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv", row.names=FALSE)
+write.csv(Deployments,"E:http://127.0.0.1:11467/graphics/plot_zoom_png?width=1383&height=794\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Deployments.csv", row.names=FALSE)
 
 
 #Upload SPATIAL
@@ -51,3 +54,5 @@ Bohar.results<-explore(tz = "Pacific/Guam", report=TRUE, save.detections = TRUE)
 plotDetections(Bohar.results,'NA-60864',y.axis=c("stations"), 
                ylab=c("Station names"))
 Bohar.results
+
+
