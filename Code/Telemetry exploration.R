@@ -48,6 +48,6 @@ setwd("E:\\Palau/Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar taggin
 createWorkspace("Bohar_test")
 
 Bohar.results<-explore(tz = "Pacific/Guam", report=TRUE, save.detections = TRUE)
-plotDetections(Bohar.results,'NA-14010',y.axis=c("stations"), 
+plotDetections(Bohar.results,'NA-60864',y.axis=c("stations"), 
                ylab=c("Station names"))
 Bohar.results
