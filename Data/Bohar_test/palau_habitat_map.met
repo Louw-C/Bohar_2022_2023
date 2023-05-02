@@ -1,0 +1,337 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: Miles Anderson, Analytical Laboratories of Hawaii
+      Publication_Date: 2007
+      Title: Benthic Habitats of Palau Derived From IKONOS Imagery, 2003-2006
+      Edition: version 1.1
+      Geospatial_Data_Presentation_Form: vector digital data
+      Publication_Information:
+        Publication_Place: Kailua, Hawaii
+        Publisher: Analytical Laboratories of Hawaii
+      Online_Linkage: http://ccma.nos.noaa.gov/products/biogeography/palau/welcome.html
+      Larger_Work_Citation:
+        Citation_Information:
+          Originator: Department of Commerce (DOC), National Oceanic and Atmospheric Administration (NOAA), National Ocean Service (NOS), National Centers for Coastal Ocean Science (NCCOS), Center for Coastal Monitoring and Assessment (CCMA), Biogeography Program
+          Publication_Date: 2007
+          Title: Benthic Habitats of Palau prepared from IKONOS Satellite Imagery
+          Edition: version 1.1
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: Silver Spring, MD
+            Publisher: NOAA's Ocean Service, National Centers for Coastal Ocean Science (NCCOS)
+  Description:
+    Abstract:
+      This project is a cooperative effort between the National Ocean Service, National Centers for Coastal Ocean Science, Center for Coastal Monitoring and Assessment, the University of Hawaii, and Analytical Laboratories of Hawaii, LLC. The goal of the work was to map the coral reef habitats of Palau by visual interpretation and manual delineation of IKONOS satellite imagery.
+      A two tiered habitat classification system was used in this work.  The scheme integrates geomorphologic reef structure and biological cover into a single scheme and subsets each into detail.  It also includes thirteen zones.
+    Purpose: The National Ocean Service is conducting a map production effort to digitally map biotic resources and coordinate a long-term monitoring program that can detect and predict change in U.S. coral reefs, and their associated habitats and biological communities.
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Range_of_Dates/Times:
+        Beginning_Date: 2003
+        Ending_Date: 2006
+    Currentness_Reference: ground condition
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: 134.111658
+      East_Bounding_Coordinate: 134.728587
+      North_Bounding_Coordinate: 8.217842
+      South_Bounding_Coordinate: 6.884663
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: None
+      Theme_Keyword: coral reef
+      Theme_Keyword: coralline algae
+      Theme_Keyword: habitat
+      Theme_Keyword: reef
+      Theme_Keyword: submerged aquatic vegetation
+      Theme_Keyword: unconsolidated sediments
+      Theme_Keyword: zone
+      Theme_Keyword: structure
+      Theme_Keyword: cover
+    Theme:
+      Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+      Theme_Keyword: oceans
+      Theme_Keyword: environment
+    Theme:
+      Theme_Keyword_Thesaurus: NOS Data Explorer Topic Category
+      Theme_Keyword: Environmental Monitoring
+    Place:
+      Place_Keyword_Thesaurus: None
+      Place_Keyword: Palau
+  Access_Constraints: None
+  Use_Constraints: Not for navigation
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: National Oceanic and Atmospheric Administration (NOAA), National Ocean Service (NOS), National Centers for Coastal Ocean Science (NCCOS), Center for Coastal Monitoring and Assessment (CCMA), Biogeography Program
+      Contact_Position: Biogeography Team Leader, Mapping Manager
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1305 East West Highway
+        City: Silver Spring
+        State_or_Province: MD
+        Postal_Code: 20910
+      Contact_Voice_Telephone: 301-713-3028
+      Contact_Facsimile_Telephone: 301-713-4384
+      Contact_Electronic_Mail_Address: tim.battista@noaa.gov
+      Hours_of_Service: 0800 - 1700, Monday to Friday, EST
+  Native_Data_Set_Environment: Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 1; ESRI ArcCatalog 9.0.0.535
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: This interim GIS polygon product was generated from eleven regions of Palau which, when combined, constitute the entire Palau Archipelago.  A statistical analysis that generates a Tau statistic will be performed.  The Tau statistic for the major classes exceeded 0.85 and exceeded 0.75 for detailed classes.  Overall thematic accuracy exceeded 85% for major classes and 75% for detailed classes.
+  Logical_Consistency_Report:
+    All mapping was conducted from orthorectified IKONOS satellite imagery provided by NOAA prior to map production.   IKONOS satellite imagery was corrected for atmospheric and water column effects, color balanced, pan sharpened and deglinted.  During the digitizing process, image stretches and manipulating image contrast, brightness and color balance were performed in the ArcView Image Analysis Extension to enhance features in the processed imagery.
+
+    GIS topologic quality was established by executing ArcView extension routines that check for: overlapping polygons, multipart polygons, sliver polygons, void polygons and zone attribute check.  Additionally checks for adjacent polygons with the same habitat attributes were completed.  All errors were identified and corrected.  This file is believed to be logically consistent.
+  Completeness_Report:
+    NOAA supplied georeferenced imagery to Analytical Laboratories of Hawaii. Delineation of all habitat boundaries was conducted with the image scale at 1:6,000 or less.
+    The minimum mapping unit (MMU) for identifying habitats or features was 1 acre.  The software utilized in this project was designed to alert the photo interpreter each time a polygon was drawn smaller than the MMU.  When this occurred the photo interpreter has the choice whether to include the polygon in the data set.  Only in areas where local coral reef managers expressed interest in specific map classes or in Marine Protected Areas or for areas of land were polygons of smaller then the MMU allowed.  Furthermore, land features were delineated with the MMU restriction removed.
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report: RMS from digitized output was determined using the ESRI RMEer2 extension and shown to be <1m when conducted at 1:6000 scale.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: M.S. Coyne
+          Publication_Date: 2003
+          Title: Classification Scheme for Benthic Habitats of the Pacific
+          Geospatial_Data_Presentation_Form: document
+          Publication_Information:
+            Publication_Place: Silver Spring, MD
+            Publisher: NOAA's Ocean Service, National Centers for Coastal Ocean Science (NCCOS)
+      Type_of_Source_Media: Report
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2003
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: Classification Scheme for Benthic Habitats of the Pacific
+      Source_Contribution: This document identified the zone, structure and biological cover types attributed in the data set
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Ken Buja
+          Publication_Date: 2003
+          Title: Coral Reef Digitizing Extension
+          Publication_Information:
+            Publication_Place: Silver Spring, MD
+            Publisher: NOAA's Ocean Service (NOS), National Centers for Coastal Ocean Science (NCCOS)
+          Online_Linkage: http://ccma.nos.noaa.gov/products/biogeography/digitizer/welcome.html
+      Type_of_Source_Media: computer program
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2003
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: Habitat Digitizer
+      Source_Contribution: This ArcView extension was used to digitize and attribute benthic zones, structure and biological cover of this map.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Space Imaging Inc.
+          Publication_Date: 2007
+          Title: IKONOS Satellite Imagery
+          Geospatial_Data_Presentation_Form: remote-sensing image
+          Publication_Information:
+            Publication_Place: Thornton, CO
+            Publisher: Space Imaging Inc.
+          Other_Citation_Details: This imagery was obtained at a 4 m pixel resolution, corrected for water column and atmospheric effects, deglinted and Pan sharpened to one meter resolution.
+          Online_Linkage: www.spaceimaging.com
+      Type_of_Source_Media: Digital on external hard drive
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Range_of_Dates/Times:
+            Beginning_Date: 2003
+            Ending_Date: 2006
+        Source_Currentness_Reference: ground condition
+      Source_Citation_Abbreviation: IKONOS imagery
+      Source_Contribution: Used to identify and digitize benthic habitats for Palau.
+    Process_Step:
+      Process_Description:
+        Benthic habitat maps were digitized by delineating habitat boundaries from georeferenced orthorectified IKONOS satellite imagery loaded into ArcView 3.3 GIS software with the Image Analysis and NOAA Coral Reef Habitat Digitizing extensions both activated.   Digitizing was conducted using heads-up on computer screen methods with the minimum mapping unit (MMU) set to 1 acre and the image scale at 1:6,000 or less.
+
+        All IKONOS imagery was processed by NOAA prior to map production.  The imagery was corrected for atmospheric and water column effects, pan sharpened and deglinted.  During the digitizing process, images were stretched and contrast, brightness and color balance were modified using the Arc View Image Analysis Extension to enhance features in the processed imagery. The overall map production plan includes a first draft map completed with  features in the imagery where uncertainties existed, due to confusing or difficult to interpret signatures, identified for future ground validation effort.  An ArcView GIS point theme was generated with points positioned on the features of uncertain habitat type or along transects though gradients between habitat types.  The GIS points are converted to GPS waypoints using Trimble Pathfinder Software and are navigated to in the field using a Trimble GeoExplorer 3 GPS data logger. A benthic habitat characterization is conducted at each site by use of a tethered video camera snorkeling, free diving, or where water depth and clarity permitted, by observation from the surface.  GPS data were collected at each location and site ID, depth, habitat type, zone and the method used to make the assessment are recorded.  A second draft of the map is generated incorporating these ground validation data.  This is a draft 1 map product.  Though the product is topologically clean and meets NOAA GIS standards, attribute accuracy is at an interim level of production and will be considerably modified prior to draft 2 and final publication.
+      Source_Used_Citation_Abbreviation: C:\DOCUME~1\Owner\LOCALS~1\Temp\xml7F.tmpSpatial_Data_Organization_Information:
+      Process_Date: 2007
+Spatial_Data_Organization_Information:
+  Direct_Spatial_Reference_Method: Vector
+  Point_and_Vector_Object_Information:
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: G-polygon
+      Point_and_Vector_Object_Count: 10038
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Grid_Coordinate_System:
+        Grid_Coordinate_System_Name: Universal Transverse Mercator
+        Universal_Transverse_Mercator:
+          UTM_Zone_Number: 53
+          Transverse_Mercator:
+            Scale_Factor_at_Central_Meridian: 0.999600
+            Longitude_of_Central_Meridian: 135.000000
+            Latitude_of_Projection_Origin: 0.000000
+            False_Easting: 500000.000000
+            False_Northing: 0.000000
+      Planar_Coordinate_Information:
+        Planar_Coordinate_Encoding_Method: coordinate pair
+        Coordinate_Representation:
+          Abscissa_Resolution: 0.000256
+          Ordinate_Resolution: 0.000256
+        Planar_Distance_Units: meters
+    Geodetic_Model:
+      Horizontal_Datum_Name: D_WGS_1984
+      Ellipsoid_Name: WGS_1984
+      Semi-major_Axis: 6378137.000000
+      Denominator_of_Flattening_Ratio: 298.257224
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: Palau_Habitat_Map.shp
+      Entity_Type_Definition: Shapefile attribute table
+      Entity_Type_Definition_Source: None
+    Attribute:
+      Attribute_Label: Shape
+      Attribute_Definition: Feature geometry.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Coordinates defining the features.
+    Attribute:
+      Attribute_Label: UNIQUEID
+      Attribute_Definition: 4 digit numerical value representing a unique habitat combination of structure and cover attributes
+      Attribute_Definition_Source: Habitat digitizing extension
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Habitat description
+          Codeset_Source: Habitat classification scheme for the Pacific
+    Attribute:
+      Attribute_Label: POLYGONID
+      Attribute_Definition: Incremental value generated for QA/QC adjacency test
+      Attribute_Definition_Source: ArcView script
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Incremental numeric field
+    Attribute:
+      Attribute_Label: AREA
+      Attribute_Definition: Area of polygon
+      Attribute_Definition_Source: ArcView script
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 56.842
+          Range_Domain_Maximum: 464535353.569
+          Attribute_Units_of_Measure: meters
+    Attribute:
+      Attribute_Label: PERIMETER
+      Attribute_Definition: Perimeter of polygon
+      Attribute_Definition_Source: ArcView script
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 28.928
+          Range_Domain_Maximum: 1055231.686
+          Attribute_Units_of_Measure: meters
+    Attribute:
+      Attribute_Label: ACRES
+      Attribute_Definition: Area of polygon in acres
+      Attribute_Definition_Source: ArcView script
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.014
+          Range_Domain_Maximum: 114786.686
+          Attribute_Units_of_Measure: acres
+    Attribute:
+      Attribute_Label: Region
+      Attribute_Definition: Number of region
+      Attribute_Definition_Source: Manually assigned string
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Manually assigned character field
+    Attribute:
+      Attribute_Label: M_STRUCT
+      Attribute_Definition: Major reef structure
+      Attribute_Definition_Source: Habitat digitizing extension
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Assigned during digitizing character field
+    Attribute:
+      Attribute_Label: D_STRUCT
+      Attribute_Definition: Detailed structure
+      Attribute_Definition_Source: Habitat digitizing extension
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Assigned during digitizing character field
+    Attribute:
+      Attribute_Label: M_COVER
+      Attribute_Definition: Major biological cover
+      Attribute_Definition_Source: Habitat classification scheme
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Assigned during digitizing
+    Attribute:
+      Attribute_Label: P_COVER
+      Attribute_Definition: Percent biological cover of major cover type
+      Attribute_Definition_Source: Habitat classification scheme
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Assigned during digitizing character field
+    Attribute:
+      Attribute_Label: ZONE
+      Attribute_Definition: Geomorphologic zone
+      Attribute_Definition_Source: Habitat classification scheme
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Assigned during digitizing character field
+    Attribute:
+      Attribute_Label: COVER
+      Attribute_Definition: Concatenated field of major cover and percent cover used for legend fill
+      Attribute_Definition_Source: ArcView script
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Character field
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: National Oceanic and Atmospheric Administration (NOAA), National Ocean Service (NOS), National Centers for Coastal Ocean Science (NCCOS), Center for Coastal Monitoring and Assessment (CCMA), Biogeography Program
+      Contact_Position: Biogeography Team Leader, Mapping Manager
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1305 East West Highway
+        City: Silver Spring
+        State_or_Province: MD
+        Postal_Code: 20910
+      Contact_Voice_Telephone: 301-713-3028
+      Contact_Facsimile_Telephone: 301-713-4384
+      Contact_Electronic_Mail_Address: tim.battista@noaa.gov
+      Hours_of_Service: 0800 - 1700, Monday to Friday, EST
+  Resource_Description: Downloadable Data
+  Distribution_Liability: The National Oceanic and Atmospheric Administration (NOAA) National Centers for Coastal Ocean Science (NCCOS) produced this data CD-ROM. NCCOS Biogeography Program does not guarantee the accuracy of the geographic features or attributes. Please see the metadata records for each data set for complete information on the source, limitations, and proper use.
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: ESRI Shapefile
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://ccma.nos.noaa.gov/products/biogeography/palau/htm/data.html
+    Fees: None
+  Custom_Order_Process: Contact NOAA for distribution options (see Distributor).
+Metadata_Reference_Information:
+  Metadata_Date: 20070611
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: National Oceanic and Atmospheric Administration (NOAA), National Ocean Service (NOS), National Centers for Coastal Ocean Science (NCCOS), Center for Coastal Monitoring and Assessment (CCMA), Biogeography Program
+      Contact_Position: Biogeography Team Leader, Mapping Manager
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1305 East West Highway
+        City: Silver Spring
+        State_or_Province: MD
+        Postal_Code: 20910
+      Contact_Voice_Telephone: 301-713-3028
+      Contact_Facsimile_Telephone: 301-713-4384
+      Contact_Electronic_Mail_Address: tim.battista@noaa.gov
+      Hours_of_Service: 0800 - 1700, Monday to Friday, EST
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile
