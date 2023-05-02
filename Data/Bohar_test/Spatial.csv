@@ -1,93 +1,26 @@
-Station.name,Latitude,Longitude,Zone,Type,Release site
-Rebotel,7.25041,134.23984,Rebotel,Hydrophone,N/A
-Movement corridor 1,7.25184,134.22313,Movement North,Hydrophone,N/A
-Movement corridor 3 ,7.27314,134.19504,Movement North,Hydrophone,N/A
-Mutiaur 1,7.27616,134.18677,Mutiaur,Hydrophone,N/A
-Mutiaur 4,7.27485,134.18564,Mutiaur,Hydrophone,N/A
-Mutiaur 3,7.2737,134.18501,Mutiaur,Hydrophone,N/A
-Mutiaur 2,7.27529,134.18726,Mutiaur,Hydrophone,N/A
-Muriaur 5,7.274,134.18706,Mutiaur,Hydrophone,N/A
-Mutiaur 6,7.27474,134.1895,Mutiaur,Hydrophone,N/A
-Movement corridor 2,7.26072,134.21074,Movement North,Hydrophone,N/A
-Ulong,7.28302,134.24525,Ulong  channel,Hydrophone,N/A
-Siaes corner,7.3142,134.22083,Siaes corner,Hydrophone,N/A
-Movement corridor 4,7.26502,134.18198,Movement South,Hydrophone,N/A
-Movement corridor 5,7.25385,134.18927,Movement South,Hydrophone,N/A
-Movement corridor 6,7.23904,134.19815,Movement South,Hydrophone,N/A
-Movement corridor 7,7.22462,134.20593,Movement South,Hydrophone,N/A
-Movement corridor 8,7.19096,134.21384,Movement South,Hydrophone,N/A
-Movement corridor A,7.16466,134.22324,Movement South,Hydrophone,N/A
-Blue corner,7.13375,134.2213,Blue corner,Hydrophone,N/A
-Movement corridor B,7.27106,134.24525,Ulong sandbar,Hydrophone,N/A
-Back reef 1,7.23469,134.2204,Back reef,Hydrophone,N/A
-Back reef 3,7.275998,134.2589,Back reef,Hydrophone,N/A
-Back reef 4,7.293004,134.2639,Back reef,Hydrophone,N/A
-Back reef 2,7.232567,134.2445,Back reef,Hydrophone,N/A
-Back reef 5,7.194028,134.2358,Back reef,Hydrophone,N/A
-Mutiaur,7.27538,134.18507,Mutiaur,Release,Mutiaur
-Mutiaur,7.27549,134.18787,Mutiaur,Release,Mutiaur
-Mutiaur,7.27568,134.78617,Mutiaur,Release,Mutiaur
-Mutiaur,7.27431,134.187968,Mutiaur,Release,Mutiaur
-Mutiaur,7.27431,134.187968,Mutiaur,Release,Mutiaur
-Mutiaur,7.274327,134.187017,Mutiaur,Release,Mutiaur
-Mutiaur,7.274327,134.187017,Mutiaur,Release,Mutiaur
-Mutiaur,7.274185,134.187676,Mutiaur,Release,Mutiaur
-Mutiaur,7.275002,134.186686,Mutiaur,Release,Mutiaur
-Mutiaur,7.274914,134.187073,Mutiaur,Release,Mutiaur
-Mutiaur,7.274914,134.187073,Mutiaur,Release,Mutiaur
-Mutiaur,7.275046,134.186994,Mutiaur,Release,Mutiaur
-Mutiaur,7.274943,134.187139,Mutiaur,Release,Mutiaur
-Mutiaur,7.275334,134.187743,Mutiaur,Release,Mutiaur
-Mutiaur,7.27574,134.18658,Mutiaur,Release,Mutiaur
-Mutiaur,7.27538,134.18623,Mutiaur,Release,Mutiaur
-Mutiaur,7.27604,134.18633,Mutiaur,Release,Mutiaur
-Mutiaur,7.27598,134.1864,Mutiaur,Release,Mutiaur
-Mutiaur,7.7.27591,134.18674,Mutiaur,Release,Mutiaur
-Mutiaur,7.27599,134.18675,Mutiaur,Release,Mutiaur
-Mutiaur,7.27599,134.18675,Mutiaur,Release,Mutiaur
-Mutiaur,7.27599,134.18675,Mutiaur,Release,Mutiaur
-Mutiaur,7.27599,134.18675,Mutiaur,Release,Mutiaur
-Mutiaur,7.27599,134.18675,Mutiaur,Release,Mutiaur
-Siaes corner,7.31489,134.22025,Siaes corner,Release,Siaes corner
-Ulong channel,7.27557,134.24438,Ulong channel,Release,Ulong channel
-Mutiaur,7.27575,134.18617,Mutiaur,Release,Mutiaur
-Mutiaur,7.27579,134.18622,Mutiaur,Release,Mutiaur
-Mutiaur,7.27579,134.18623,Mutiaur,Release,Mutiaur
-Mutiaur,7.276,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.276,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.275824,134.186017,Mutiaur,Release,Mutiaur
-Mutiaur,7.27574,134.18658,Mutiaur,Release,Mutiaur
-Mutiaur,7.72546,134.18657,Mutiaur,Release,Mutiaur
-Ulong channel,7.28293,134.24559,Ulong channel,Release,Ulong channel
-Ulong channel,7.28293,134.24559,Ulong channel,Release,Ulong channel
-Ulong channel,7.28293,134.24559,Ulong channel,Release,Ulong channel
-Ulong channel,7.28293,134.24559,Ulong channel,Release,Ulong channel
-Mutiaur,7.26922,134.1819,Mutiaur,Release,Mutiaur
-Mutiaur,7.26857,134.18138,Mutiaur,Release,Mutiaur
-Mutiaur,7.27484,134.18462,Mutiaur,Release,Mutiaur
-Mutiaur,7.27607,134.18607,Mutiaur,Release,Mutiaur
-Mutiaur,7.2753,134.18643,Mutiaur,Release,Mutiaur
-Mutiaur,7.2753,134.18643,Mutiaur,Release,Mutiaur
-Mutiaur,7.2753,134.18643,Mutiaur,Release,Mutiaur
-Mutiaur,7.27639,134.19208,Mutiaur,Release,Mutiaur
-Mutiaur,7.27693,134.19325,Mutiaur,Release,Mutiaur
-Mutiaur,7.27632,134.186287,Mutiaur,Release,Mutiaur
+Station.name,Latitude,Longitude,Array,Type
+Rebotel,7.25041,134.23984,Rebotel,Hydrophone
+Movement corridor 1,7.25184,134.22313,Movement North,Hydrophone
+Movement corridor 3 ,7.27314,134.19504,Movement North,Hydrophone
+Mutiaur 1,7.27616,134.18677,Mutiaur,Hydrophone
+Mutiaur 4,7.27485,134.18564,Mutiaur,Hydrophone
+Mutiaur 3,7.2737,134.18501,Mutiaur,Hydrophone
+Mutiaur 2,7.27529,134.18726,Mutiaur,Hydrophone
+Muriaur 5,7.274,134.18706,Mutiaur,Hydrophone
+Mutiaur 6,7.27474,134.1895,Mutiaur,Hydrophone
+Movement corridor 2,7.26072,134.21074,Movement North,Hydrophone
+Ulong channel,7.28302,134.24525,Ulong  channel,Hydrophone
+Siaes corner,7.3142,134.22083,Siaes corner,Hydrophone
+Movement corridor 4,7.26502,134.18198,Movement South,Hydrophone
+Movement corridor 5,7.25385,134.18927,Movement South,Hydrophone
+Movement corridor 6,7.23904,134.19815,Movement South,Hydrophone
+Movement corridor 7,7.22462,134.20593,Movement South,Hydrophone
+Movement corridor 8,7.19096,134.21384,Movement South,Hydrophone
+Movement corridor A,7.16466,134.22324,Movement South,Hydrophone
+Blue corner,7.13375,134.2213,Blue corner,Hydrophone
+Movement corridor B,7.27106,134.24525,Ulong sandbar,Hydrophone
+Back reef 1,7.23469,134.2204,Back reef,Hydrophone
+Back reef 3,7.275998,134.2589,Back reef,Hydrophone
+Back reef 4,7.293004,134.2639,Back reef,Hydrophone
+Back reef 2,7.232567,134.2445,Back reef,Hydrophone
+Back reef 5,7.194028,134.2358,Back reef,Hydrophone
