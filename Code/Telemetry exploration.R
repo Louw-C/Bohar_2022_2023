@@ -1,4 +1,5 @@
 require(tidyverse)
+require(actel)
 
 #Set your working directory (remember to change \ to \\)
 setwd("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023")
@@ -46,4 +47,7 @@ getwd()
 setwd("E:\\Palau/Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023\\Data\\Bohar_test")
 createWorkspace("Bohar_test")
 
-explore(tz = "Pacific/Guam")
+Bohar.results<-explore(tz = "Pacific/Guam", report=TRUE, save.detections = TRUE)
+plotDetections(Bohar.results,'NA-14010',y.axis=c("stations"), 
+               ylab=c("Station names"))
+Bohar.results
