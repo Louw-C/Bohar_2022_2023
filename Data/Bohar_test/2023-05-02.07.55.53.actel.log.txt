@@ -1,0 +1,42 @@
+Actel R package report.
+Version: 1.2.1
+
+Target folder: E:/Palau/Research/Coastal Fisheries/Natalie Tagging/2022 Bohar tagging/Bohar_2022_2023/Data/Bohar_test
+Timestamp: 2023-05-02 07:55:44
+Function: explore()
+
+M: Importing data. This process may take a while.
+Warning: Long group names detected. To improve graphic rendering, consider keeping group names under six characters.
+M: Number of target tags: 66.
+Warning: Long array names detected. To improve graphic rendering, consider keeping array names under six characters.
+Warning: The spatial input does not contain a 'Section' column. This input is only valid for explore() analyses.
+Warning: Release sites were not specified in the spatial.csv file. Attempting to assume all released animals start at the top level array.
+M: Matching detections with deployment periods.
+M: Number of ALS: 25 (of which 17 had no detections)
+Warning: No detections were found for receiver(s) 123723, 125446, 125515, 126283, 126439, 126441, 126442, 126444, 126445, 134611, 138922, 138923, 138924, 138925, 487131, 487133, 487135.
+M: Data time range: 2022-11-04 05:23:00 to 2022-11-26 03:56:00 (Pacific/Guam).
+M: Data successfully imported!
+M: Creating movement records for the valid tags.
+M: Checking movement events quality.
+Warning: 'speed.warning'/'speed.error' were not set, skipping speed checks.
+Warning: 'inactive.warning'/'inactive.error' were not set, skipping inactivity checks.
+Warning: Tag NA-14010 (1/1) jumped through 2 arrays from release to first valid event (Release -> Mutiaur).
+Warning: Tag NA-14010 (1/1) jumped through 2 arrays in valid events 13 -> 14 (Mutiaur -> Movement_South).
+Warning: Tag NA-14010 (1/1) jumped through 2 arrays in valid events 16 -> 17 (Movement_South -> Mutiaur).
+Warning: Tag NA-14010 (1/1) jumped through 2 arrays in valid events 19 -> 20 (Mutiaur -> Movement_South).
+Warning: Tag NA-14010 (1/1) jumped 2 or more arrays on 8 occasions (of which the first 4 are displayed above).
+         Events that raised warnings: 1, 14, 17, 20, 51, 53, 66, 68
+M: Filtering valid array movements.
+M: Compiling circular times.
+M: Saving results as 'actel_explore_results.RData'.
+M: Process finished successfully.
+
+-------------------
+User interventions:
+-------------------
+y # save results?
+-------------------
+Function call:
+-------------------
+explore(tz = 'Pacific/Guam', datapack = NULL, max.interval = 60, minimum.detections = 2, start.time = NULL, stop.time = NULL, speed.method = c('last to first'), speed.warning = NULL, speed.error = NULL, jump.warning = 2, jump.error = 3, inactive.warning = NULL, inactive.error = NULL, exclude.tags = NULL, override = NULL, report = FALSE, discard.orphans = FALSE, discard.first = NULL, auto.open = TRUE, save.detections = FALSE, GUI = 'never', save.tables.locally = 'FALSE, print.releases = TRUE, detections.y.axis = 'auto')
+-------------------
