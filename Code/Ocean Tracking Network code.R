@@ -27,12 +27,16 @@ Mean_Longitude
 
 #Mapping
 
-Map1<-Bohar %>% 
-  group_by(Transmitter) %>% 
-  summarise(n=n()) %>% 
-  left_join(Bohar) %>% 
-  dplyr::select(Transmitter, Latitude, Longitude) %>% 
-  filter(Transmitter=="A69-1602-51651"| Transmitter=="A69-1602-51644") %>% 
-  droplevels()
+BoharS<-Bohar
+coordinates(BoharS)<-~Latitude+Longitude
+BoharS
+proj4string(BoharS)<-CRS("+proj=utm +zone=53 +ellps=WGS84 +datum=WGS84 +units=m +no_defs")
+proj4string(BoharS)
 
-Map1
+BoharS1<-spTransform(BoharS,CRS("+init=epsg:28992"))
+BoharS1
+
+
+x=.5
+SC<-getNOAA.bathy
+BoharS1<-BoharS1 %>% .name_repair(BoharS1)
