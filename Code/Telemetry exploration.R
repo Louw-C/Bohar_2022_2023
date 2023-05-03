@@ -3,6 +3,8 @@ require(actel)
 require(raster)
 require(gdistance)
 require(rgdal)
+require(rgeos)
+require(adehabitatHR)
 
 #Set your working directory (remember to change \ to \\)
 setwd("E:\\Palau\\Research\\Coastal Fisheries\\Natalie Tagging\\2022 Bohar tagging\\Bohar_2022_2023")
