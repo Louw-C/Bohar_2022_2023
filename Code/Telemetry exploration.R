@@ -128,12 +128,33 @@ Mut.plot
 
 #Look at all bohar across all receivers
 All<-database %>% filter(species=="Lutjanus bohar")
+All %>% head(5)
 
 All.plot <- ggplot(data= All, aes(x = Date_Local, y=tag.ID.f)) +
   facet_grid(Station_Name~.)+
   geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
 All.plot
 
+All.plot <- ggplot(data= All, aes(x = Date_Local, y=tag.ID.f, color=Station_Name))+
+  geom_jitter()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
+All.plot
+
 All.plot <- ggplot(data= All, aes(x = tag.ID.f, y=Station_Name))+
   geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
 All.plot
+
+#Zoom in on a single full moon series (January 2023)
+All<-database %>% filter(species=="Lutjanus bohar")
+All_Jan<-All %>% 
+  filter(Date_Local >= as.Date("2023-01-01"), Date_Local <= as.Date("2023-01-09"))
+#Colours
+All_Jan.plot <- ggplot(data= All_Jan, aes(x = Date_Local, y=tag.ID.f, color=Station_Name))+
+  geom_jitter()+ ggtitle("All detections_January 2023") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
+All_Jan.plot
+
+#Facet grid
+All_Jan.plot <- ggplot(data= All_Jan, aes(x = Date_Local, y=tag.ID.f))+
+  facet_grid(Station_Name~.)+
+  geom_jitter()+ ggtitle("All detections_January 2023") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
+All_Jan.plot
+
