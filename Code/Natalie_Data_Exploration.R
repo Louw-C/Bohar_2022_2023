@@ -3,26 +3,123 @@
 Bohar_all <- read.csv(file.choose()) 
 Bohar_all %>% head(5)
 
-#Loaded the tag meta data that Natalie developed
+#Loaded the tag meta data that Natalie developed (Revised the column names)
 Bohar_meta <- read.csv(file.choose()) 
 #Look at the first 5 rows of data
 Bohar_meta %>% head(5)
-#This code selects certain columns only (make sure to state that dplyr:: should be used)
-Bohar_meta <- Bohar_meta %>% dplyr::select(tag.ID,species,FL,sex,
-                                           site,Latitude,Longitude,
-                                           date.local,time.local,tag.group)
-#Check the first 5 rows of data
-Bohar_meta %>% head(5)
-colnames(Bohar_meta) <- c("tag.ID","species","FL","sex",
-                          "deploy.site","deploy.lat","deploy.lon",
-                          "deploy.date","deploy.time",
-                          "tag.group")
-#This merges two data frames with a common ID - here we used tag.ID
-database <- merge(Bohar_all,Bohar_meta,by = "tag.ID")
-database %>% head(5)
 
+#This merges two data frames with a common ID - here we used tag.ID
+Bohar_database <- merge(Bohar_all,Bohar_meta,by = "Tag_ID")
+Bohar_database %>% head(5)
 #Make sure tag.ID is a factor
-database$tag.ID.f <- as.factor(database$tag.ID)
+Bohar_database$Tag_ID.f <- as.factor(Bohar_database$Tag_ID)
+Bohar_database$Station_Name <- as.factor(Bohar_database$Station_Name)
+
+#Develop plots to look at overall patterns - look at bohar and grey reefs
+Overview<-Bohar_database %>% filter(Species=="Lutjanus bohar" |
+                                      Species==" Carcharhinus amblyrhynchos")
+Overview %>% head(5)
+
+
+Overview.plot1 <- ggplot(data= Overview, aes(x = Date_Local, y=Tag_ID.f, color=Species)) +
+  facet_grid(Station_Name~.)+
+  geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
+Overview.plot1
+
+Overview.plot2 <- ggplot(data= Overview, aes(x = Date_Local, y=Tag_ID.f, color=Station_Name))+
+  facet_grid(Species~.)+
+  geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
+Overview.plot2
+
+Overview.plot3 <- ggplot(data= Overview, aes(x = Tag_ID.f, y=Station_Name, colour=Species))+
+  geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Overview.plot3
+
+#Pick out a single fish
+#Bohar 14021
+Bohar_14021<-Bohar_database %>% filter(Tag_ID.f=="14021")
+Bohar_14021.plot1<- ggplot(data= Bohar_14021, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_14021") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+                                                ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_14021.plot1
+
+#Bohar 46650 
+Bohar_46650<-Bohar_database %>% filter(Tag_ID.f=="46650")
+
+Bohar_46650.plot1<- ggplot(data= Bohar_46650, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_46650") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+                                                ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_46650.plot1
+#Such an interesting pattern between Rebotel and Mutiaur - linked with full moon
+
+###Bohar_51648
+Bohar_51648<-Bohar_database %>% filter(Tag_ID.f=="51648")
+Bohar_51648.plot1<- ggplot(data= Bohar_51648, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_51648") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+                                                ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_51648.plot1
+
+#Bohar 51647
+Bohar_51647<-Bohar_database %>% filter(Tag_ID.f=="51647")
+Bohar_51647.plot1<- ggplot(data= Bohar_51647, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_51648") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+                                                ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_51647.plot1
+
+#Bohar51646
+Bohar_51646<-Bohar_database %>% filter(Tag_ID.f=="51646")
+Bohar_51646.plot1<- ggplot(data= Bohar_51646, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_51646") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_51646.plot1
+
+#Bohar 51645
+Bohar_51645<-Bohar_database %>% filter(Tag_ID.f=="51645")
+Bohar_51645.plot1<- ggplot(data= Bohar_51645, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_51645") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_51645.plot1
 
 #only look at Mutiaur 2 - and see what tags were detected across time
 #Filter whole database to only Mutiaur 2
@@ -64,21 +161,6 @@ Mut.plot <- ggplot(data= Mut, aes(x = Date_Local, y=tag.ID.f, color=Station_Name
 Mut.plot
 
 #Look at all bohar across all receivers
-All<-database %>% filter(species=="Lutjanus bohar")
-All %>% head(5)
-
-All.plot <- ggplot(data= All, aes(x = Date_Local, y=tag.ID.f)) +
-  facet_grid(Station_Name~.)+
-  geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
-All.plot
-
-All.plot <- ggplot(data= All, aes(x = Date_Local, y=tag.ID.f, color=Station_Name))+
-  geom_jitter()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
-All.plot
-
-All.plot <- ggplot(data= All, aes(x = tag.ID.f, y=Station_Name))+
-  geom_point()+ ggtitle("All detections") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0))
-All.plot
 
 #Zoom in on a single full moon series (January 2023)
 All<-database %>% filter(species=="Lutjanus bohar")
