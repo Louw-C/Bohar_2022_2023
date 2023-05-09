@@ -332,6 +332,163 @@ Bohar_14011.plot1<- ggplot(data= Bohar_14011, aes(x = Date_Local, y=Station_Name
                               "Ulong channel","Siaes corner","Back reef 1"))
 Bohar_14011.plot1
 
+#Bohar 60855
+Bohar_60855<-Bohar_database %>% filter(Tag_ID.f=="60855")
+Bohar_60855.plot1<- ggplot(data= Bohar_60855, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60855") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60855.plot1
+
+#Bohar 60856
+Bohar_60856<-Bohar_database %>% filter(Tag_ID.f=="60856")
+Bohar_60856.plot1<- ggplot(data= Bohar_60856, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60856") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60856.plot1
+
+#Bohar 60859
+Bohar_60859<-Bohar_database %>% filter(Tag_ID.f=="60859")
+Bohar_60859.plot1<- ggplot(data= Bohar_60859, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60859") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60859.plot1
+
+
+#Bohar 60862
+Bohar_60862<-Bohar_database %>% filter(Tag_ID.f=="60862")
+Bohar_60862.plot1<- ggplot(data= Bohar_60862, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60862") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60862.plot1
+
+#Bohar 60857
+Bohar_60857<-Bohar_database %>% filter(Tag_ID.f=="60857")
+Bohar_60857.plot1<- ggplot(data= Bohar_60857, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60857") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60857.plot1
+
+#Bohar 60858
+Bohar_60858<-Bohar_database %>% filter(Tag_ID.f=="60858")
+Bohar_60858.plot1<- ggplot(data= Bohar_60858, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_60858") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_60858.plot1
+
+#Bohar 46646
+Bohar_46646<-Bohar_database %>% filter(Tag_ID.f=="46646")
+Bohar_46646.plot1<- ggplot(data= Bohar_46646, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_46646") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_46646.plot1
+
+#Bohar 46648
+Bohar_46648<-Bohar_database %>% filter(Tag_ID.f=="46648")
+Bohar_46648.plot1<- ggplot(data= Bohar_46648, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_46648") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_46648.plot1
+
+#Bohar 46651
+Bohar_46651<-Bohar_database %>% filter(Tag_ID.f=="46651")
+Bohar_46651.plot1<- ggplot(data= Bohar_46651, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_46651") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_46651.plot1
+
+#Bohar 14010
+Bohar_14010<-Bohar_database %>% filter(Tag_ID.f=="14010")
+Bohar_14010.plot1<- ggplot(data= Bohar_14010, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_14010") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_14010.plot1
+
+#Bohar 14026
+Bohar_14026<-Bohar_database %>% filter(Tag_ID.f=="14026")
+Bohar_14026.plot1<- ggplot(data= Bohar_14026, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_14026") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_14026.plot1
+
+#Bohar 5960
+Bohar_5960<-Bohar_database %>% filter(Tag_ID.f=="5960")
+Bohar_5960.plot1<- ggplot(data= Bohar_5960, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Bohar_5960") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                                axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Bohar_5960.plot1
+
 grid.arrange(Bohar_14011.plot1,Bohar_14020.plot1,Bohar_14047.plot1, 
              Bohar_46647.plot1,Bohar_46649.plot1,Bohar_46652.plot1,
              nrow = 3,ncol=2)
@@ -343,6 +500,210 @@ grid.arrange(Bohar_46653.plot1,Bohar_46654.plot1,Bohar_46655.plot1,
 grid.arrange(Bohar_60864.plot1,Bohar_14021.plot1,Bohar_51648.plot1,
              Bohar_51647.plot1,Bohar_51646.plot1,Bohar_51645.plot1,
              nrow = 3,ncol=2)
+
+grid.arrange(Bohar_14026.plot1,Bohar_14010.plot1,Bohar_46651.plot1,
+             Bohar_46648.plot1,Bohar_46646.plot1, Bohar_60858.plot1,
+             nrow = 3,ncol=2)
+
+grid.arrange(Bohar_60857.plot1,Bohar_60862.plot1,Bohar_60859.plot1,
+             Bohar_60856.plot1,Bohar_60855.plot1,Bohar_14021.plot1,
+             nrow = 3,ncol=2)
+
+grid.arrange(Bohar_51644.plot1,Bohar_60864.plot1,Bohar_46650.plot1,
+             Bohar_51647.plot1,Bohar_51646.plot1,Bohar_51642.plot1,
+             nrow = 3,ncol=2)
+
+grid.arrange(Bohar_51648.plot1,Bohar_51643.plot1,
+             nrow = 3,ncol=2)
+
+
+
+######Plot Sharks########
+
+#Grey 49996 - no detections?
+
+
+#Grey 49991
+Grey_49991<-Bohar_database %>% filter(Tag_ID.f=="49991")
+Grey_49991.plot1<- ggplot(data= Grey_49991, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49991") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49991.plot1
+
+#Grey 63786
+Grey_63786<-Bohar_database %>% filter(Tag_ID.f=="63786")
+Grey_63786.plot1<- ggplot(data= Grey_63786, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_63786") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_63786.plot1
+
+#Grey 49993
+Grey_49993<-Bohar_database %>% filter(Tag_ID.f=="49993")
+Grey_49993.plot1<- ggplot(data= Grey_49993, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49993") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49993.plot1
+
+#Grey 63782
+Grey_63782<-Bohar_database %>% filter(Tag_ID.f=="63782")
+Grey_63782.plot1<- ggplot(data= Grey_63782, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_63782") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_63782.plot1
+
+#Grey 63788 - no detections?
+
+#Grey 49994
+Grey_49994<-Bohar_database %>% filter(Tag_ID.f=="49994")
+Grey_49994.plot1<- ggplot(data= Grey_49994, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49994") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49994.plot1
+
+#Grey 63784
+Grey_63784<-Bohar_database %>% filter(Tag_ID.f=="63784")
+Grey_63784.plot1<- ggplot(data= Grey_63784, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_63784") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_63784.plot1
+
+
+#Grey 49998
+Grey_49998<-Bohar_database %>% filter(Tag_ID.f=="49998")
+Grey_49998.plot1<- ggplot(data= Grey_49998, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49998") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49998.plot1
+
+#Grey 49999
+Grey_49999<-Bohar_database %>% filter(Tag_ID.f=="49999")
+Grey_49999.plot1<- ggplot(data= Grey_49999, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49999") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49999.plot1
+
+#Grey 49992
+Grey_49992<-Bohar_database %>% filter(Tag_ID.f=="49992")
+Grey_49992.plot1<- ggplot(data= Grey_49992, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49992") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49992.plot1
+
+#Grey 63781
+Grey_63781<-Bohar_database %>% filter(Tag_ID.f=="63781")
+Grey_63781.plot1<- ggplot(data= Grey_63781, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_63781") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_63781.plot1
+
+#Grey 63789
+Grey_63789<-Bohar_database %>% filter(Tag_ID.f=="63789")
+Grey_63789.plot1<- ggplot(data= Grey_63789, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_63789") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_63789.plot1
+
+#Grey 49995
+Grey_49995<-Bohar_database %>% filter(Tag_ID.f=="49995")
+Grey_49995.plot1<- ggplot(data= Grey_49995, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49995") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49995.plot1
+
+#Grey 49997
+Grey_49997<-Bohar_database %>% filter(Tag_ID.f=="49997")
+Grey_49997.plot1<- ggplot(data= Grey_49997, aes(x = Date_Local, y=Station_Name))+
+  geom_jitter()+ ggtitle("Grey_49997") + theme(axis.text.x=element_text(angle=90),strip.text.y = element_text(angle = 0),
+                                               axis.title.x=element_blank()) +
+  ylab("Station name")+
+  scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
+                              "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
+                              "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
+                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong channel","Siaes corner","Back reef 1"))
+Grey_49997.plot1
+
+grid.arrange(Grey_49997.plot1,Grey_49995.plot1,Grey_63789.plot1,
+             Grey_63781.plot1, Grey_49992.plot1, Grey_49999.plot1,
+             nrow = 3,ncol=2)
+
+grid.arrange(Grey_49998.plot1,Grey_63784.plot1,Grey_49994.plot1,
+             Grey_63782.plot1, Grey_49993.plot1, Grey_63786.plot1,
+             nrow = 3,ncol=2)
+
+Grey_49991.plot1
 
 #only look at Mutiaur 2 - and see what tags were detected across time
 #Filter whole database to only Mutiaur 2
