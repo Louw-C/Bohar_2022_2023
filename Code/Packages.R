@@ -1,0 +1,8 @@
+require(tidyverse)
+require(actel)
+require(raster)
+require(gdistance)
+require(rgdal)
+require(rgeos)
+require(adehabitatHR)
+require(gridExtra)
