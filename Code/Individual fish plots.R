@@ -38,11 +38,16 @@ Bohar_database %>% head(5)
 #Make sure tag.ID is a factor
 Bohar_database$Tag_ID.f <- as.factor(Bohar_database$Tag_ID)
 Bohar_database$Station_Name <- as.factor(Bohar_database$Station_Name)
+Bohar_database$Date_Local <- as.factor(Bohar_database$Date_Local)
 
 #Subset to only look at Bohar and sharks
 Overview<-Bohar_database %>% filter(Species=="Lutjanus bohar" |
                                       Species==" Carcharhinus amblyrhynchos")
 Overview %>% head(5)
+
+#Fullmoon dates
+Fullmoon<-data.frame(date=as.Date(c("2022-11-08", "2022-12-07", "2023-01-07", 
+                                    "2023-02-06", "2023-03-07", "2023-04-06")))
 
 #Individual fish plots
 #Pick out a single fish
@@ -58,6 +63,7 @@ Bohar_14021.plot1<- ggplot(data= Bohar_14021, aes(x = Date_Local, y=Station_Name
                               "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
                               "Ulong channel","Siaes corner","Back reef 1"))
 Bohar_14021.plot1
+
 
 #Bohar 46650 
 Bohar_46650<-Bohar_database %>% filter(Tag_ID.f=="46650")
