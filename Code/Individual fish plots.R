@@ -9,6 +9,9 @@
 #Station_Name
 #Latitude
 #Longitude
+#####Remember to add in coordinates for Movement A and B
+#####Fix Mutiaur spelling - wrong in VUE (MUtiaur)
+#####Check Siaes spelling and site name spelling throughout
 Bohar_all <- read.csv(file.choose()) 
 Bohar_all %>% head(5)
 
