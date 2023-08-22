@@ -4,7 +4,7 @@
 #Make sure to edit the column headings:
 #Date_Local
 #Time_Local
-#Reciever
+#Receiver
 #Tag_ID (just the tag ID - remove A69-1602-)
 #Station_Name
 #Latitude
