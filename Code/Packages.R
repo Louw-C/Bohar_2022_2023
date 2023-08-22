@@ -1,6 +1,6 @@
 require(tidyverse)
-require(dplyr)
 require(plyr)
+require(dplyr)
 require(actel)
 require(raster)
 require(gdistance)
