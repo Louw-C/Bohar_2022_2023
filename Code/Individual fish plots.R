@@ -4,7 +4,7 @@
 #Make sure to edit the column headings:
 #Date_Local
 #Time_Local
-#Reciever
+#Receiver
 #Tag_ID (just the tag ID - remove A69-1602-)
 #Station_Name
 #Latitude
@@ -36,13 +36,13 @@ Bohar_meta %>% head(5)
 Bohar_database <- merge(Bohar_all,Bohar_meta,by = "Tag_ID")
 Bohar_database %>% head(5)
 #Make sure tag.ID is a factor
-Bohar_database$Tag_ID.f <- as.factor(Bohar_database$Tag_ID)
+Bohar_database$Tag_ID <- as.factor(Bohar_database$Tag_ID)
 Bohar_database$Station_Name <- as.factor(Bohar_database$Station_Name)
 Bohar_database$Date_Local <- as.factor(Bohar_database$Date_Local)
 
 #Subset to only look at Bohar and sharks
 Overview<-Bohar_database %>% filter(Species=="Lutjanus bohar" |
-                                      Species==" Carcharhinus amblyrhynchos")
+                                      Species=="Carcharhinus amblyrhynchos")
 Overview %>% head(5)
 
 #Fullmoon dates
@@ -60,8 +60,9 @@ Bohar_14021.plot1<- ggplot(data= Bohar_14021, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14021.plot1
 
 
@@ -75,8 +76,9 @@ Bohar_46650.plot1<- ggplot(data= Bohar_46650, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46650.plot1
 #Such an interesting pattern between Rebotel and Mutiaur - linked with full moon
 
@@ -89,8 +91,9 @@ Bohar_51648.plot1<- ggplot(data= Bohar_51648, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51648.plot1
 
 #Bohar 51647
@@ -102,8 +105,9 @@ Bohar_51647.plot1<- ggplot(data= Bohar_51647, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51647.plot1
 
 #Bohar51646
@@ -115,8 +119,9 @@ Bohar_51646.plot1<- ggplot(data= Bohar_51646, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51646.plot1
 
 #Bohar 51645
@@ -128,8 +133,9 @@ Bohar_51645.plot1<- ggplot(data= Bohar_51645, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51645.plot1
 
 #Bohar 51644
@@ -141,8 +147,9 @@ Bohar_51644.plot1<- ggplot(data= Bohar_51644, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51644.plot1
 
 #Bohar 51643
@@ -167,8 +174,9 @@ Bohar_51642.plot1<- ggplot(data= Bohar_51642, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_51642.plot1
 
 
@@ -181,8 +189,9 @@ Bohar_60864.plot1<- ggplot(data= Bohar_60864, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60864.plot1
 
 #Bohar 60863
@@ -194,8 +203,9 @@ Bohar_60863.plot1<- ggplot(data= Bohar_60863, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60863.plot1
 
 #Bohar 60861
@@ -207,8 +217,9 @@ Bohar_60861.plot1<- ggplot(data= Bohar_60861, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60861.plot1
 
 #Bohar 60860
@@ -220,8 +231,9 @@ Bohar_60860.plot1<- ggplot(data= Bohar_60860, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60860.plot1
 
 #Bohar 46655
@@ -233,8 +245,9 @@ Bohar_46655.plot1<- ggplot(data= Bohar_46655, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46655.plot1
 
 #Bohar 46654
@@ -246,8 +259,9 @@ Bohar_46654.plot1<- ggplot(data= Bohar_46654, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46654.plot1
 
 #Bohar 46653
@@ -259,8 +273,9 @@ Bohar_46653.plot1<- ggplot(data= Bohar_46653, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46653.plot1
 
 #Bohar 46652
@@ -272,8 +287,9 @@ Bohar_46652.plot1<- ggplot(data= Bohar_46652, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46652.plot1
 
 #Bohar 46649
@@ -285,8 +301,9 @@ Bohar_46649.plot1<- ggplot(data= Bohar_46649, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46649.plot1
 
 #Bohar 46647
@@ -298,8 +315,9 @@ Bohar_46647.plot1<- ggplot(data= Bohar_46647, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46647.plot1
 
 #Bohar 14047
@@ -311,8 +329,9 @@ Bohar_14047.plot1<- ggplot(data= Bohar_14047, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14047.plot1
 
 #Bohar 14020
@@ -324,8 +343,9 @@ Bohar_14020.plot1<- ggplot(data= Bohar_14020, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14020.plot1
 
 
@@ -338,8 +358,9 @@ Bohar_14011.plot1<- ggplot(data= Bohar_14011, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14011.plot1
 
 #Bohar 60855
@@ -351,8 +372,9 @@ Bohar_60855.plot1<- ggplot(data= Bohar_60855, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60855.plot1
 
 #Bohar 60856
@@ -364,8 +386,9 @@ Bohar_60856.plot1<- ggplot(data= Bohar_60856, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60856.plot1
 
 #Bohar 60859
@@ -377,8 +400,9 @@ Bohar_60859.plot1<- ggplot(data= Bohar_60859, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60859.plot1
 
 
@@ -391,8 +415,9 @@ Bohar_60862.plot1<- ggplot(data= Bohar_60862, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60862.plot1
 
 #Bohar 60857
@@ -404,8 +429,9 @@ Bohar_60857.plot1<- ggplot(data= Bohar_60857, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60857.plot1
 
 #Bohar 60858
@@ -417,8 +443,9 @@ Bohar_60858.plot1<- ggplot(data= Bohar_60858, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_60858.plot1
 
 #Bohar 46646
@@ -430,8 +457,9 @@ Bohar_46646.plot1<- ggplot(data= Bohar_46646, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46646.plot1
 
 #Bohar 46648
@@ -443,8 +471,9 @@ Bohar_46648.plot1<- ggplot(data= Bohar_46648, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46648.plot1
 
 #Bohar 46651
@@ -456,8 +485,9 @@ Bohar_46651.plot1<- ggplot(data= Bohar_46651, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_46651.plot1
 
 #Bohar 14010
@@ -469,8 +499,9 @@ Bohar_14010.plot1<- ggplot(data= Bohar_14010, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14010.plot1
 
 #Bohar 14026
@@ -482,8 +513,9 @@ Bohar_14026.plot1<- ggplot(data= Bohar_14026, aes(x = Date_Local, y=Station_Name
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_14026.plot1
 
 #Bohar 5960
@@ -495,8 +527,9 @@ Bohar_5960.plot1<- ggplot(data= Bohar_5960, aes(x = Date_Local, y=Station_Name))
   scale_y_discrete(limits = c("Blue corner", "Movement A", "Movement 8", "Movement 7", 
                               "Movement 6","Movement 5","Movement 4","Mutiaur 3", "Mutiaur 4",
                               "Mutiaur 5","Mutiaur 2", "Mutiaur 1","Mutiaur 6",
-                              "Movement 3", "Movement 2", "Movement 1","Rebotel","Movement B",
-                              "Ulong channel","Siaes corner","Back reef 1"))
+                              "Movement 3","Movement 3 deep","Movement 2", "Movement 1","Rebotel","Movement B",
+                              "Ulong","Siaes corner","Back reef 1",
+                              "Back reef 2", "Back reef 3", "Back reef 4", "Back reef 5"))
 Bohar_5960.plot1
 
 grid.arrange(Bohar_14011.plot1,Bohar_14020.plot1,Bohar_14047.plot1, 
